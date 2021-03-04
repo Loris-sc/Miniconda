@@ -1,0 +1,27 @@
+#command prompt
+
+#Conda-forge channel
+conda update -n base conda
+conda config --prepend channels conda-forge
+
+#jupiter
+conda create -n ox -c conda-forge osmnx jupyterlab
+conda activate ox
+
+#commandprompt
+jupiter lab
+
+#Export to shp
+
+import osmnx as ox
+%matplotlib inline
+ox.config(log_console=True)
+ox.__version__
+
+# get a network
+place = 'Piedmont, California, USA'
+G = ox.graph_from_place(place, network_type='drive')
+
+#Shapefiles and GeoPackages for GIS
+# save graph as a shapefile
+ox.save_graph_shapefile(G, filepath='./data/piedmont')
