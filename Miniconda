@@ -1,3 +1,16 @@
+# To install
+C:\Users\Loris>conda config --add channels conda-forge
+
+C:\Users\Loris>conda list pip
+
+C:\Users\Loris>conda install jupyter notebook
+
+# To run
+cd (change directory cmd prompt)
+dir (shows elements in the folder)
+C:\Users\Loris>jupyter notebook
+
+----------------------------------------------------
 #command prompt
 
 #Conda-forge channel
