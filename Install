@@ -1,0 +1,21 @@
+Create a conda environment:
+
+conda create -n geo python=3.11
+conda activate geo
+conda install -c conda-forge mamba
+mamba install -c conda-forge geospatial
+
+
+Check conda version: conda info
+Update conda to the current version:  conda update -n base conda
+List all conda environments: conda env list
+Create a new environment named ENVNAME with the latest Python version:  conda create -n ENVNAME python
+Create a new environment named ENVNAME with the a specific Python version:  conda create -n ENVNAME python=3.11
+Activate a name Conda environment: conda activate ENVNAME
+Deactivate the current Conda environment: conda deactivate
+List all package and version in the active environment:  conda list
+Install mamba: conda install -c conda-forge mamba
+Delete an entire environment: conda remove -n ENVNAME --all
+Install package from conda-forge:  conda install PKGNAME -c conda-forge
+Install package  by exact version number:  conda install PKGNAME=x.x.x -c conda-forge
+Remove a package from an environment:  conda uninstall PKGNAME -n ENVNAME
